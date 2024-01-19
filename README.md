@@ -1,15 +1,17 @@
 # archive_info
 
-Get information about app from apk
+Get metadata from a apk file
 
-## Getting Started
+# Status
+### In progress
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+# Usage
+Initialize
+```dart
+final apkInfo = ArchiveInfo();
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+Get package name
+```dart
+final name = apkInfo.getPackageName('file path');
+```
